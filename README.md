@@ -1,4 +1,4 @@
-# studykasus
+# studykasus pertemuan 13 - 14
 ```
 Nama : Sahrul Ridwansyah 
 Kelas: TI.22.A2
@@ -165,7 +165,29 @@ SELECT k.nama AS nama_karyawan
     WHERE p.nama = 'B';
 ```
 
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/54958752-3605-4966-b175-2500ad9c323f)
+
     
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/3a7e51cf-430e-4b1e-91da-8d3dad561814)
+
+
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/00b49518-15c6-4063-aa06-96e555850a9b)
+
+
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/9a33c516-0dc2-4a7e-9e12-b60929f544ec)
+
+
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/bd5c7c91-48e3-4cd2-be87-3986b9cb57e0)
+
+
+
+
+
+
+
+
+
+
 
 
 
