@@ -124,7 +124,7 @@ SELECT k.nik, k.nama
 
 ![image](https://github.com/sahrul180304/studykasus/assets/115526901/be847dd1-5d87-45ca-8769-97be7ea2a872)
 
-# latihan praktikum
+# latihan praktikum 13
 ```
 SELECT p.nama AS project, d.nama AS departemen
 FROM project p
@@ -178,6 +178,110 @@ SELECT k.nama AS nama_karyawan
 
 
 ![image](https://github.com/sahrul180304/studykasus/assets/115526901/bd5c7c91-48e3-4cd2-be87-3986b9cb57e0)
+
+
+
+# praktikum 14 
+
+```
+SELECT *
+    -> FROM karyawan
+    -> WHERE id_dept IN (
+    -> SELECT id_dept
+    -> FROM dapartement
+    -> WHERE manager_nik = 'n08'
+    -> ) OR nik = 'n08';
+```
+```
+SELECT *
+    -> FROM karyawan
+    -> WHERE gaji_pkok > (
+    -> SELECT AVG(gaji_pkok)
+    -> FROM karyawan
+    -> )
+    -> ORDER BY gaji_pkok DESC;
+```
+```
+SELECT k.nik, k.nama
+    -> FROM karyawan k
+    -> WHERE k.id_dept IN (
+    -> SELECT id_dept
+    -> FROM karyawan
+    -> WHERE nama LIKE '%K%'
+    -> ) AND k.nama LIKE '%K%';
+```
+```
+SELECT k.*
+    -> FROM karyawan k
+    -> JOIN dapartement d ON k.id_dept = d.id_dept
+    -> WHERE d.id_p = 'p01';
+```
+```
+SELECT k.nik, k.nama
+    -> FROM karyawan k
+    -> WHERE k.id_dept IN (
+    -> SELECT id_dept
+    -> FROM karyawan
+    -> WHERE nama LIKE '%K%'
+    -> ) AND k.gaji_pkok > (
+    -> SELECT AVG(gaji_pkok)
+    -> FROM karyawan
+    -> );
+```
+
+
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/b5a2720a-b909-4197-b9a6-a7a9e046db64)
+
+
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/efaccb30-0809-43d1-8e22-639c02649e29)
+
+
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/452b2cf8-71cb-4a96-854e-725b9eed5ce5)
+
+
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/f211fbe1-28d8-48f6-b415-a9f6bead6370)
+
+
+![image](https://github.com/sahrul180304/studykasus/assets/115526901/ae07c3ed-8db8-4ea8-b3a2-25c36bd049ee)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
